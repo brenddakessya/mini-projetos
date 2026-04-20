@@ -1,0 +1,46 @@
+body {
+    background-image: url(wallpaper.png);
+    background-size: cover;        /* cobre toda a tela */
+    background-position: center;   /* centralizado */
+    background-repeat: no-repeat;  /* não repete */
+    background-attachment: fixed;  /* fica fixo ao rolar a página */
+}
+
+.imagem {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+#img1 {
+    background-image: url(baixados.jpg);
+}
+
+#img2 {
+    background-image: url(charles.jpg);
+}
+
+/* Ao passar o mouse na img1, ela troca para a img2 */
+#img1:hover {
+    background-image: url(charles.jpg);
+    opacity: 0.85; 
+    transition: opacity 0.3s ease;
+    transform: scale(1.1);
+}
+
+#img2:hover {
+    background-image: url(baixados.jpg);
+    opacity: 0.85; 
+    transition: opacity 0.3s ease;
+    transform: scale(1.1);
+}
+/* Link já visitado */
+.imagem:visited {
+    border: 3px solid purple;
+    opacity: 0.5;
+}
