@@ -1,0 +1,57 @@
+
+ul {
+    font-family: Helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {    
+    list-style: square;
+}
+    
+:root{
+    --green:#00ff00;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --bntBg: var(--black);
+    --bntFontColor: var(--white);
+}
+    
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --bntBg: var(--white);
+    --bntFontColor: var(--black);
+}
+    
+*{
+    color: var(--fontColor);
+    font-family: Helvetica;
+}
+
+body {
+        background: var(--bg);
+}
+
+.bnt{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:none;
+    color: var(--bntFontColor);
+    background-color: var(--bntBg);
+}
+
+.bnt:focus{outline-style: none;}
+
+
